@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Odisha</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Shree Jaganath Temple</b></h1>
+                <p id="para1">The Jagannath Temple, located in Puri, Odisha, India, is one of the most famous and sacred Hindu temples in the world. It is dedicated to Lord Jagannath, a form of the Hindu deity Vishnu. The temple has a rich and fascinating history that spans centuries, making it a significant cultural and religious landmark. In this essay, we will explore the history of the Jagannath Temple in detail, delving into its origins, development, and enduring spiritual significance.</p>
+                <p>The history of the Jagannath Temple can be traced back over a thousand years, with the first mentions of the temple dating to the 12th century. It is believed to have been built during the reign of King Anantavarman Chodaganga Deva, of the Eastern Ganga dynasty, in the 12th century. The temple’s construction marked the beginning of a new era in the religious and cultural landscape of the region.</p>
+                <p>The Jagannath Temple is renowned for its rich and elaborate rituals and festivals. Among the most famous is the Rath Yatra, or the Chariot Festival, which attracts millions of pilgrims from all over the world. The Rath Yatra involves the ceremonial procession of the deities on grand chariots through the streets of Puri.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='jaganath.jpg') }}"
+                width="800px"
+                breadh="900px">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Jaganath Temple darshanam details:</h3>
+    <p>The temple usually opens early in the morning, around 5 AM.After the morning darshan, the temple closes for a few hours in the afternoon, typically between 1 PM and 4 PM. The temple reopens for the evening darshan around 7 PM.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.826839251649!2d85.8153636793457!3d19.804937900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c6b8bfe386af%3A0x8f052c84639c7d48!2sShree%20Jagannatha%20Temple%20Puri!5e0!3m2!1sen!2sin!4v1708009923348!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Sun Temple Konark</b></h1>
+                <p id="para1">Sun Temple of Konark, built in the middle of 13th century, is a massive conception of artistic magnificence and engineering dexterity. King Narasimhadeva I, the great ruler of the Ganga dynasty had built this temple, with the help of 1200 artisans within a period of 12 years (1243-1255 A.D.). Since the ruler used to worship the Sun, the temple was considered as a chariot for the Sun God. Konark Temple was designed in the form of a gorgeously decorated chariot mounted on 24 wheels , each about 10 feet in diameter, and drawn by 7 mighty horses. It is really difficult to understand, how this huge temple, every inch-space of which was so wonderfully carved, could have been completed within such a short time.</p>
+                <p>The temple is known for its impressive Kalinga architecture that includes a depiction of a 100 ft high chariot being pulled by horses and wheels carved out of a single stone. The monument portrays the imposing chariot of the sun god. Built of Khondalite rocks, the original temple had 230 ft high sanctum which no longer exists, 128 ft high audience hall, dance hall, dining hall which survive still. There are 24 intricately designed wheels, 12 ft in diametre which are seen drawn by horses. </p>
+                <img src="{{ url_for('static',filename='suntemple.webp') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Sun temple darshanam details:</h3>
+        <p>The visiting hours for the Konark Sun Temple in Odisha, India are typically from sunrise to sunset, around 6:00 AM to 5:00 PM.</p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.8727291642226!2d86.09453640414222!3d19.887595330282107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19f2a097819bbf%3A0xed9983ca391e3247!2sKonark%20Sun%20Temple!5e0!3m2!1sen!2sin!4v1708009662742!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/odisha" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Haryana</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b> Thanesar Pathar Masjid </b></h1>
+                <p id="para1">This famous masjid, or mosque lies just behind the tomb of Sheikh Chilli in Bari Mohalla. It is believed to have been created in the 17th century and the architectural style also hints the same. Famous for its fluted minarets, attached to the back wall, Pathar Masjid is a beautiful monument built in red sandstone. Floral motifs, carved in low relief on the pillars of the mosque on which the ceiling rests are so intricate that it is worth visiting the mosque just to see them. The qibla, pointing in the direction of the holy Mecca, is flanked on either side by arched niches, which are inscribed with Quran verses. The masjid is a beautiful specimen of architecture of that time.</p>
+                    <p>Pathar Masjid (Thanesar) is a mosque build of red sandstone in Mughal architecture style. The fluted minarets are attached to the back walls. Believed to be built in 17th century, the mosque is located in Thanesar (Kurukshetra district) and is protected by the Government of India. The ceiling that rests on pillars is decorated by carved floral designs. It is situated near the tomb of Sheikh Chilli</p>
+            <div> 
+                <img src="{{ url_for('static',filename='pathar-masjid-kurukshetra.webp') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Thanesar Pathar Masjid visiting details:</h3>
+    <p>The opening hours of hanesar Pathar Masjid are from 9:00 AM to 9:00 PM</p>
+        <h3>Map:</h3>
+   <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.1221617683595!2d76.82515327500775!3d29.97591902181516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e475fbf37dfe5%3A0xcac52ce10b560bd!2sPathar%20Masjid%2C%20Kurukshetra!5e0!3m2!1sen!2sin!4v1708068166435!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Gurudwara Nada Sahib </b></h1>
+                <p id="para1">The Gurudwara Nada Sahib is situated in Panchkula on the bank of Ghaggar river in Sivalik foothills. It is a famous religious place of the Sikhs. Guru Gobind Singh halted here while travelling from Paonta Sahib to Anandpur Sahib after the Battle of Bhangani in 1688.The holy flag flies atop a 105 feet (32 m) high staff on one side of the courtyard, near the site of the old shrine. Religious gatherings and community meals take place every day. The full moon day every month is celebrated as a festive occasion attended by a large number of people from the northern region so its good.</p>
+                <p>According to Sikh tradition, Guru Gobind Singh, along with his followers, rested at this place after the Battle of Bhangani in 1688. It is said that a devotee named Nada, who lived in the area, served the Guru and his army with devotion. In gratitude, Guru Gobind Singh blessed Nada, and the gurdwara was later established in his honor.</p>
+                <img src="{{ url_for('static',filename='nadasahib.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Gurudwara Nada Sahib timings:</h3>
+    <p>Gurudwara Nada Sahib Timings	are from 4 A.M. to 9 P.M. (Till 10 P.M. during full moon nights) and its open 7 days in a week. </p>
+       <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30957.75822202208!2d74.44665987431641!3d14.09371229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc410efb2f7e51%3A0xc0548490c3c96ee4!2sShri%20Murudeshwar%20Shivan%20Temple!5e0!3m2!1sen!2sin!4v1707897074835!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/haryana" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

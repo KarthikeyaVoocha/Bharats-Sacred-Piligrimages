@@ -1,0 +1,19 @@
+
+body {
+    background: url("piligrims4.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   }
+   button{
+    border: none;
+    position: relative;
+top: 200px; 
+left: 690px;
+border-radius: 8px;
+background-color: rgb(247, 171, 73);
+font-size: 24px;
+   }
+
+  

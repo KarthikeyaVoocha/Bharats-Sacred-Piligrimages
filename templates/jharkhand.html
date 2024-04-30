@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Jharkhand</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Baidyanath Dham</b></h1>
+                <p id="para1">Baidyanath Dham has been famous since the rule of the last Gupta emperor, Adityasena Gupta in the 8th century AD. Mughal emperor Akbar’s brother-in-law built a pond at Deoghar known as Mansarovar. This temple appears to have maintained its importance even during the Muslim rule in India.Baidyanath Jyotirlinga temple, also known as Baba Baidyanath dham and Baidyanath dham is one of the twelve Jyotirlingas, the most sacred abodes of Shiva. It is located in Deoghar in the Santhal Parganas division of the state of Jharkhand, India. It is a temple complex consisting of the main temple of Baba Baidyanath, where the Jyotirlinga is installed, and 21 other temples.</p>
+                <p>The Baba Baidyanath Temple at Deoghar has a remarkable and rich history attached to it. The temple finds mention in several ancient scriptures and continues to be used even in modern day history books. The history of this Jyotirlinga goes back to the Treta Yuga, at the time of Lord Rama.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='Baba-Baidyanath-Dham-Temple.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Baidyanath Dham temple darshan details:</h3>
+    <p>On a normal day, the worshipping of Baidyanath Jyotirlingam begins at 4 AM. The temple doors open at this time. During 4:00am to 5:30 am, the Head priest worships with Shodashopachar.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7465.6548139383995!2d86.69647497595614!3d24.494003545167928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1162b1519c019%3A0xdb8ce9bf0b62d036!2sBaba%20Baidyanath%20Dham!5e0!3m2!1sen!2sin!4v1708053240785!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Pahari Mandir</b></h1>
+                <p id="para1"></p>The Pahari Mandir of Lord Shankara (Shiva) is situated in the heart of the city near Ratu Road on a hill called Pahari Mandir. It is a bare black land outcropping in the midst of a flat land. The age old Pahari Mandir is located 8 kms from the railway station and 12 kms from the airport. The 2140 feet Ranchi hill houses the temple. One needs to climb a flight of 468 steps to reach the main temple at peak point.
+
+                This place is fast developing into a religious tourist site as this is the best place to have a bird’s eye view of the city of Ranchi and also attain some salvation by paying ones obsequies to the Lord. A huge crowd of Shiva devotees gather here between the months of February and October, during Shivaratri and other important days earmarked to pray to the Lord. The Lord also known as Pahari Baba is worshipped in the form of a linga. The hillock also known as Richi Buru is famous for its breathtaking views of the city and some spectacular sunsets and sunrises.
+                
+                 
+                
+                The month of Shravan is being considered as very much auspicious to visit the temple.</p>
+
+                <img src= "{{ url_for('static',filename='paharimandir.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;"> Pahari Mandir darshan details:</h3>
+        <p>The Temple Timings in Regular Days : Temple Opens at 04:30am-01:00pm & 02:00pm-06:00pm ; Temple Closes at 01:00pm-02:00pm. </p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14649.41367471512!2d85.29169558715822!3d23.37542860000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e0e3ac9571fb%3A0xbfd684943698a996!2sPahari%20Mandir%2C%20Ranchi!5e0!3m2!1sen!2sin!4v1708054116247!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/jharkhand" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

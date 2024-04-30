@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Madhya Pradesh</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Sanchi Stupa</b></h1>
+                <p id="para1">The stupa (“stupa” is Sanskrit for heap) is an important form of Buddhist architecture, though it predates Buddhism. It is generally considered to be a sepulchral monument—a place of burial or a receptacle for religious objects. At its simplest, a stupa is a dirt burial mound faced with stone. In Buddhism, the earliest stupas contained portions of the Buddha’s ashes, and as a result, the stupa began to be associated with the body of the Buddha. Adding the Buddha’s ashes to the mound of dirt activated it with the energy of the Buddha himself.</p>
+                <p>The ashes of the Buddha were buried in stupas built at locations associated with important events in the Buddha’s life including Lumbini (where he was born), Bodh Gaya (where he achieved Enlightenment), Deer Park at Sarnath (where he preached his first sermon sharing the Four Noble Truths), and Kushingara (where he died). The choice of these sites and others were based on both real and legendary events.</p>
+                <p>The stupa has a hemispherical dome, a raised terrace, and four gateways. The gateways are decorated with sculptures and carvings that tell stories from Buddha's life. </p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='stupa.webp') }}"
+                width="800px"
+                breadh="900px">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Sanchi Stupa darshanam details:</h3>
+    <p>Sanchi Stupa timings are from 8:30 AM to 5:30 PM on all days of the week. Sanchi Stupa visiting hours may affect on public and national holidays. Timings for Sanchi Stupa Museum are 10 am to 5 pm.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.475410121784!2d77.73478857801702!3d23.479379844632298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c0f0187f0b81b%3A0xf7cb87fbbf090027!2sSanchi%20Stupa%20No.%201!5e0!3m2!1sen!2sin!4v1708016070281!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Omkareshwar Temple</b></h1>
+                <p id="para1">The Jyotirlinga of Omkareshwar is located in Madhya Pradesh along the banks of the Narmada River. The eminent ‘Shikhara of Omkareshwar’ stands tall and proud in the sky as if overlooking the entire earth. The temple is mentioned in sacred Hindu texts like the Vedas and Puranas. The island of Omkareshwar has a total of 6 pilgrimages and 33 deities making it a must-visit place for spiritual seekers.</p>
+                <p>Omkareshwar, located on the island of Mandhata, next to the Narmada River in Madhya Pradesh is a sacred island, shaped like the holy Hindu symbol ’ Om’ drawing hundreds of pilgrims to this temple town. At the confluence of Rivers Narmada & Kaveri, the devout have gathered for centuries to kneel before the Jyotirlinga (one of the twelve throughout India) at the temple of Shri Omkar Mandhata. This serene town is adorned with lofty hills, where the river Narmada forms a serene pool. Above this pool runs a cantilever type 270 feet hanging bridge which enhances the beauty of Omkareshwar. </p>
+                <img src="{{ url_for('static',filename='OmkareshwarTemple2.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Omkareshwar temple darshanam details:</h3>
+        <p>The temple opens at 5 AM and closes at 9:30 PM.The temple also performs various rituals during this time.
+            Morning Darshan	5:00 AM to 3:50 PM
+            Evening Darshan	4:15 PM to 9:30 PM
+            Mangal Aarti	5:00 AM to 5:30 AM
+            Jalabhishek	    5:30 AM to 12:25 PM
+            Evening Aarti	8:20 PM to 9:05 PM
+        </p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.8801285219624!2d76.14952792529091!3d22.24462647972662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962bdfe25a5853f%3A0xb2ec9da93195f90d!2sOmkareshwar%20Jyotirlinga!5e0!3m2!1sen!2sin!4v1708017673424!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/mp" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

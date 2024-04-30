@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Chhattisgarh</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Pragya Giri Temple</b></h1>
+                <p id="para1">Pragya giri is situated in Dongargarh in the Rajnandgaon district, on a hilltop of 1,000 feet. There is a Buddh vihara with a large Buddha statue facing east. There are 225 steps leading up the mountain. Construction of Pragyagiri was done in 1998. On the top of the hill there is a garden and descriptions on the rock.</p>
+                <p>Pragya giri is an area of Dongargarh in the Rajnandgaon district of the Indian state of Chhattisgarh situated on a hilltop of 1,000 feet. There is a Buddh vihara with a large Buddha statue facing east. There are 225 steps leading up the mountain. Construction of Pragyagiri was done in 1998 by Pujya Bhadant Sangharatna Manake k.Dhamma work is continuing on Pragyagiri Dongargarh from Pannya Metta sangha India In since 1991. The first International Buddhist Conference was held on 6 February 1992 by Pujya Bhadant Sangharatna Manake. So far, 25 international Buddhist conferences have been organized by the Pannya Metta Sangha.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='pragyagiri.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Pragya Giri Temple timings:</h3>
+        <p>the Pragya Giri Temple is open 24 hours for the visitors</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.4970787230895!2d80.76078597526059!3d21.172403680513074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2be0e47e052951%3A0x2f43ae6387b1a93!2sPragyagiri%20Dongargarh%20Tourist%20Place!5e0!3m2!1sen!2sin!4v1708094452405!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Pataleswar Kedar Temple</b></h1>
+                <p id="para1">Pataleshwar Kedar Temple is an important temple of Hindus in Bilaspur that holds a number of devotees every year in the premises. The temple is said to be dated back to the 11th century and since then it has retained its old charm and significance of the bygone era. It is dedicated to Lord Shiva and the main attraction here is the Gomukhi Shivalinga. Moreover the intricate carvings and architecture of the temple is unmatched and fascinates the tourists. The unmatched architectural excellence of the temple reminds of the rich culture and heritage of the ancient period of the region and delights the devotees with an aura of bliss and beauty.</p>
+                <p>The history of this temple dates back to the period between 10th and 11th century. This temple still retains the old appeal that it once had when it was made during the ancient times.
+
+                    The temple houses a Gomukhi Siva-ling which is the main attraction and is thus visited by lots of tourists every year. The sculpture of the temple edifice is simply unsurpassed and has intricate carvings on it.</p>
+                <img src="{{ url_for('static',filename='pataleshwar.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Pataleswar Kedar temple darshan details:</h3>
+        <p>Darshan Timings are  Opening Timing - 08:30 Am & Closing Timing - 05:30 Pm.</p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.017214890887!2d82.27754957473796!3d21.89541285745029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a27d995f7d46f29%3A0xd7bd5a10bffaa548!2sShri%20Pataleshvara%20Temple%20-%20Bilaspur%20District%2C%20Chhattisgarh%2C%20India!5e0!3m2!1sen!2sin!4v1708095721023!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/chhattisgarh" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+{% for comment in comments%}
+
+<div>
+<hr>
+    <h6>{{comment.Name}}</h6>
+    <p> {{comment.comment}}</p>
+
+</div>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

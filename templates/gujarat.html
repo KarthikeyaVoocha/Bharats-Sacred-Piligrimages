@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Gujarat</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Dwarkadhish Temple</b></h1>
+                <p id="para1">Constructed in the Chalukya style, the Dwarkadhish Temple, or Jagat Mandir, in Dwarka, Gujarat, honours Lord Krishna. The settlement dates back to the Kingdom of Dwarka, mentioned in the Mahabharata, and was established in the fourth century BC. The five-storey main shrine of the temple was built with limestone and sand. The 2,200-year-old piece of architecture is thought to be the work of Vajranabha (Lord Krishna’s great-grandson) who erected it on land that Lord Krishna reclaimed from the sea. </p>
+                <p>The Dwarkadhish Temple (also known as Dwarka Temple) is the most visited attraction in the city of Dwarka. The original temple has been repaired several times. The temple is situated on a tiny hill. One has to climb over 50 stairs to reach it. The sanctum, which houses the principal Krishna deity, is surrounded by intricately-sculpted walls. Other little shrines can be seen scattered throughout the site. The fantastic figures and legends adorning the walls have been expertly carved.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='Dwarkadhish-Temple-1.jpg') }}"
+                width="800px"
+                breadh="900px">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Dwarkadhish temple darshanam details:</h3>
+    <p>Morning Timing – 6:30 AM to 1:00 PM
+       Evening Time - 5:00 PM to 9:30 PM
+       Abhishek Snan – 08:00 AM to 09:00 AM
+       Anosar (Darshan Close) – 01:30 PM to 05:00 PM
+       Shrungar Arti – 11:00 AM</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14772.313154277585!2d68.9485710871582!3d22.237108199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39569c3ab7c4e9e5%3A0x31b7c3111df48f4!2sShree%20Dwarkadhish%20Temple!5e0!3m2!1sen!2sin!4v1708018813272!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Somnath Temple</b></h1>
+                <p id="para1">The Somnath temple located in Prabhas Patan near Veraval in Saurashtra on the western coast of Gujarat, is believed to be the first among the twelve jyotirlinga shrines of Shiva. It is an important pilgrimage and tourist spot of Gujarat.Reconstructed several times in the past after repeated destruction by several Muslim invaders and Portuguese the present temple was reconstructed in Chaulukya style of Hindu temple architecture and completed in May 1951. The reconstruction was completed by Vallabhbhai Patel. The site of Somnath has been a pilgrimage site from ancient times on account of being a Triveni sangam (the confluence of three rivers — Kapila, Hiran and Sarasvati. SomaMoon god, is believed to have lost his lustre due to a curse, and he bathed in the Sarasvati River at this site to regain it. The result is the waxing and waning of the moon, no doubt an allusion to the waxing and waning of the tides at this sea shore location. The name of the town Prabhas, meaning lustre, as well as the alternative names Someshvar and Somnath (“The lord of the moon” or “the moon god”) arise from this tradition</p>
+                <p>The mythology surrounding the Somnath Temple is deeply rooted in Hindu religious texts and epics.The central deity of the Somnath Temple is a Jyotirlinga, a sacred representation of Lord Shiva. This is one of the twelve Jyotirlingas in India, each believed to possess immense spiritual power. The Lingam symbolizes the endless and omnipresent nature of Lord Shiva and attracts devotees from far and wide.</p>
+                <img src="{{ url_for('static',filename='Somanath_mandir_.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Somnath Temple darshanam details:</h3>
+        <p>The temple opens for darshan at 6.00 am in the morning and remains open till 9.00 pm in the night.The devotees can attend aarti at 7:00 am ,at 12:00pm and at 7:00 pm</p>
+        <h3>Map:</h3>
+        <p id="map"></p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.60372465114!2d70.39623859678954!3d20.888016900000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bfd329f0417cb75%3A0x2f5a510de9857963!2sShree%20Somnath%20Jyotirling%20Temple!5e0!3m2!1sen!2sin!4v1708020519401!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/gujarat" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

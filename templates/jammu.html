@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Jammu and Kashmir</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Vaishnav Devi Temple</b></h1>
+                <p id="para1">Vaishno Devi is a temple town that's home to the famous Vaishno Devi Mandir. Located in Trikuta hills, 13 kms from Katra (in the union territory of Jammu and Kashmir); this renowned shrine allures millions of devotees from all over the world.  Popularly known as Mata Rani, Vaishnavi and Trikuta, Vaishno Devi is a manifestation of the Hindu Goddess Durga. It is believed that during the pooja and aarti, Goddesses arrive at the Holy cave to pay their respect to Mata Rani. Devotees believe the goddess herself calls the devotees to reach here.</p>
+                <p>The Vaishno Devi Temple is an important Hindu temple dedicated to Vaishno Devi located in Katra at the Trikuta Mountains within the Indian Union territory of Jammu and Kashmir. The temple is one of the 108 Shakti Peethas dedicated to Durga, who is worshipped as Vaishno Devi. It is one of the most visited pilgrimage centers of India. Every year millions of visitors visit the temple. During festivals like Navaratri, the count even increases to one crore visitors.[14] Vaishno Devi Temple is one of the richest temples in India. Authors Michael Barnett and Janice Gross Stein says, "Mata Vaishno Devi Shrine in Jammu has an annual income of about $16 billion, mainly from offerings by devotees".
+
+                    The temple is sacred to all Hindus. Many prominent saints such as Vivekananda have visited the temple.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='MataVDevi.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;"> Vaishnav Devi temple darshan details:</h3>
+    <p>There are no specific opening and closing times for the Vaishno Devi Temple, or even Vaishno Devi, Jammu timings, although the aarti timings are 5:00, am to 12:00 pm and between 4:00 pm to 9:00 pm on a daily basis.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107477.44360486703!2d74.78545545508888!3d32.66822173952566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e856921e06ecb%3A0xdf7ff133f97fa4cb!2sVaishnodevi%20Temple!5e0!3m2!1sen!2sin!4v1708029281075!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Amarnath Cave Temple</b></h1>
+                <p id="para1">The holy shrine of Amarnath Ji, or Amarnath Temple, is located at an elevation of 3,888 meters approx, about 29 kilometers from Pahalgam. Inside the cave is a Shiva Lingam (a phallus shaped formation made of ice), considered to be the most holy symbol by Hindus all across the globe. Devotees visit it in large numbers from June to August, with the pilgrimage tour famously known as Amarnath Yatra, which begins from Chandanwari. It is considered to be one of the 18 Maha Shakti Peethas, or the holiest shrines in Hinduism. Besides seeking blessings at the Amarnath Temple, the views surrounding it are extraordinary.The Amarnath Cave has special significance . This is The Cave which was chosen by Bhole Shankar for narrating the secretsof immortality and creation of Universe to Maa Parvati ji .</p>
+                <p>According to legends, Bhrigu Muni, a famous sage in Hinduism, was the first person to have discovered this holy site. At that time, the entire Kashmir Valley was submerged under water, and Kashyap Muni, another powerful sage, drained the waters with his divine powers. As the waters cleared, Bhrigu Muni was the first person to have the site of the Shiva Lingam.Lakhs of great men and common men, both old and young, have undertaken the hazardous and exhausting trekking to the cave for centuries.</p>
+                <img src="{{ url_for('static',filename='amarnath-cave-temple1.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Amarnath temple darshan details:</h3>
+    <p>Darshan Timings of Amarnath temple are :Opening Timing - 6:00 AM. Closing Timing - 6:00 PM.
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.286739473404!2d75.50154517518419!3d34.21569620908278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e24fca96056755%3A0xdfd15d625912515e!2sShri%20Amarnath%20Cave%20Temple!5e0!3m2!1sen!2sin!4v1708030140793!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/jammu" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

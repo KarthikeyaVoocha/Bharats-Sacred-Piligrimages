@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Telangana</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Badhrachalam</b></h1>
+                <p id="para1">Lord Sree Sita Ramachandra Swamy Temple in Bhadrachalam is a Hindu temple of Lord Rama located in Telangana, India. The area is called as Bhadrachalam and is the venue of grand celebrations on Rama Navami day, when the wedding anniversary of Lord Rama and his consort Sita takes place with much fanfare.
+
+                    The temple in Bhadrachalam is closely connected with the life of the 17th-century saint composer Kancharla Gopanna who was known as Bhakta Ramadas. Gopanna was the Tahasildar of Bhadrachalam (second half of the 17th century), is said to have used money from the government treasury to build this temple, and was imprisoned in a dungeon at Golconda. Lord Rama is said to have miraculously given the Sultan the money spent by Gopanna, after which he was released. Gopanna then became Bhadrachala Ramadasa and went on to compose innumerable number of songs in Telugu in praise of Rama.
+                    
+                    Bhadrachalam and Vijayanagara are sites said to have been closely associated with the Ramayana. Rama, Sita and Lakshmana are said to have stayed at Parnasala, 35 km away from Bhadrachalam. Rama is said to have crossed the river Godavari on his way to Sri Lanka to rescue Sita, at the spot where the Bhadrachalam temple stands, on the northern bank of the river. Legend has it that the son of Meru and Menaka, Bhadra, performed penances towards Rama here. Kabirdas, a Muslim by birth is also closely associated with this temple. It is believed that the images of the deities miraculously disappeared when Kabir was refused entry into the temple and that they reappeared miraculously upon his being permitted to enter.</p>
+                <p>Bhadrachalam attracts hundreds of thousands of devotees from all over the world. This hill place that is encircled by Holy River Godavari flowing towards southern direction is the famous shrine Bhadrachalam. The name is derived from Bhadragiri (Mountain of Bhadra: a boon child of Meru and Menaka). The history of this shrine stands for the significance of Ramayana Era, the coherent hill place existed in "Dandakaranya" of Ramayana period where Rama with his consort Sita and brother Lakshmana had spent their vanavasa. The vicinity of the temple had its incongruous mixture in another story which depicts the exigency of "Sri Mahavishnu" to manifest himself as Rama and shuffled again to the mortal coil — long after Ramavatara was to fulfill his promise to his Bhakta Bhadra (a mountain king), a sage who had been continuing the intense penance to get grace of Lord Rama.</p>
+
+            </div>
+            <div>
+                <img src= "{{ url_for('static',filename='badhrachalam.html') }}"
+                width="800"
+                breadh="900">
+                </div>
+        </div>
+                <br>
+    <h3 style=" margin-top: 30px;">Badhrachalam darshanam details:</h3>
+    <p>Morning Hours: 5:00 am to 12:00 pm,
+        Afternoon Hours: 3:00 pm to 6:00 pm,
+        Evening Hours: 6:30 pm to 9:00 pm</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.649386491485!2d80.88003447463305!3d17.666757394698028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36a8c95c6c2ff3%3A0xcca66e387ceee206!2sSree%20Seetha%20Ramachandraswamy%20Vari%20Devasthanam%20-%20Bhadrachalam!5e0!3m2!1sen!2sin!4v1707731882205!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Yadadri Temple</b></h1>
+                <p id="para1">Yadadri Narasimha Swamy temple located in Yadagirgutta, which surrounded with an eye-catching hillock, and lies in a distance of 60km from Hyderabad. The main deity in Yadadri Narasimha Swamy temple is Lord Lakshmi Narasimha Swamy. This temple mostly called as Yadagirigutta Lakshmi Narasimha Swamy Temple. A region in  Yadadri called as “ Rishi Aradhana Kshetram” (a holy place to worship for sages), this is one of the mythological temples that mentioned in Skanda Purana out of 18 Puranas.</p>
+                <p id="para2">The son of Sage Rishyasrunga and Shanta Devi named Yada Maharishi, in Thretha yuga performed strict penance for Lord Narsimha in a cave with the blessings of Lord hanuman in between the hills of Bhongir and Raigiri. By his devotion, lord Narimsha compassionated and manifested in five forms as Sri Jwala Narasimha, Sri Yogananda, Sri Gandabherunda, Sri Ugra Narasimha and Sri Lakshmi Narasimha. Yada Maharshi asked the Lord to stay on the hill in all the five forms in the cave.Another Epical history says that Lord Sriman Narayana compassioned by the penance of Sage Rishyasrunga and sent Lord Hanuman, to direct him in the direction where Sri Lakshminarasimha Swamy stays. That place now called as the foot of Yadagiri hillock.</p>
+                <p>The temple constructed based on Vaishnava Agama Shastra, by using a single stone. The Yadadri Narasimha temple consists of a central temple, Mukha mandapam, Vratha peetham, Swamy Vari udyana Vanam, Kalyana mandapam, Satram and seven wooden gopurams.</p>
+
+
+                <img src=  "{{ url_for('static',filename='yadadri') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+    
+
+        <br>
+    <h3 style=" margin-top: 30px;">Yadadri temple darshanam details:</h3>
+        <p>Yadagirigutta temple timings are 4:00 AM to 9:45 PM.
+           Temple is closed between 3:00 PM – 4:00 PM (except Sat and Sundays). </p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.2910021778357!2d78.94176257463134!3d17.588911096969408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb66630166cccd%3A0x24b91e71a60c48c2!2sSri%20Lakshmi%20Narasimha%20Swamy%20Temple!5e0!3m2!1sen!2sin!4v1707734507551!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<br><br><br>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/Tg" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

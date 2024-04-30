@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Punjab</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Moorish Mosque</b></h1>
+                <p id="para1">The Moorish Mosque is situated in the city of Kapurthala in the Indian state of Punjab.
+
+                    The mosque’s architectural design is based on the Grand Qutubiyya Mosque in the city Marrakesh of the Kingdom of Morocco. And there is a history to this.It was commissioned by Maharaja Jagatjit Singh (1875-1949, reign 1877-1947), the last ruler of Kapurthala. Kapurthala city, was then the capital city of the Kapurthala State, known as 'Mini Paris of Punjab' and the mosque was stated to be one of the best in South-east Asia. The mosque is a national monument protected by the Archaeological Survey of India.
+
+                    Maharaja Jagatjit Singh was famous not only for this Spanish wife, Anita Delgado Briones (1890–1962), but also for the state that he built, heavily influenced by the continent, and was known as a Francophile.</p>
+                    <p>The Maharaja, a Sikh, who built it, believed in catering to the aspirations of his largely Muslim subjects (about 60%). The mosque was his ambitious effort to promote social integration among his people, and this is proved by the fact that when the then Viceroy of India sent him a letter questioning him on the large costs involved in building it, the Maharaja replied: "Your Excellency may be unaware that 60 per cent of my population comprises of my loyal Muslim subjects. It is only in the fitness of things that the best place of worship in my state be constructed for them." </p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='moorish-mosque-india-.jpg') }}"
+                width="800px"
+                breadh="900px">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Moorish Mosque Timings:</h3>
+    <p>The Moorish Mosque is opened at 5:00 AM in the morning and closed at 11:00 PM at the night</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.607568241414!2d75.37817397560556!3d31.369806774283255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a48515f5d5ce9%3A0x4a98b887a9a83233!2sMoorish%20Mosque!5e0!3m2!1sen!2sin!4v1708024569669!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Golden Temple</b></h1>
+                <p id="para1">The Golden Temple is the most celebrated monument in Amritsar, known as much for its spiritual significance as for its architectural beauty. Also called Harmandir Sahib or Darbar Sahib, this gurudwara stands as the holiest pilgrimage site of Sikhism and a prime tourist attraction in India. If Amritsar is the next place on your bucket list, make sure to include this spectacular place of worship in your itinerary.</p>
+                <p>The construction of the Golden Temple marks an important chapter in the history of Sikhism in India. The foundation for the gurudwara was laid in 1581 and the construction was completed in 1588. In 1604, a copy of the Adi Granth, the principal scripture of Sikhism, was placed inside the gurudwara by Guru Arjan, the fifth Guru of the Sikhs. At that time, the site was called the Ath Sath Tirath. Over the years, the shrine was destroyed many times by the rulers of the Mughal Empire and the Muslim armies marching in from Afghanistan. Each time it was rebuilt by the Sikhs.</p>
+                <p>The Golden Temple stands in the midst of a beautiful water body called Amritsar or Amrit Sarovar, from where the city derives its name. The shrine displays influences of different architectural styles, including the Indo-Islamic Mughal architecture and the Hindu Rajput architecture. It is a two-storied structure. While the lower level of the shrine is built out of marble, the upper level is covered in gold panels. A 750 kg gold gilded dome sits at the top of this structure. Even the doors of the shrine are covered in gold foil.</p>
+                <img src= "{{ url_for('static',filename='Goldentemp.avif') }}"
+                 width="800px"
+                 breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Golden Temple Timings:</h3>
+        <p>The entry is free to Golden Temple and free darshan is available to all devotees. The Golden Temple Timings on all days of the week is between 05:00 am and 10:00 pm. </p>
+        <h3>Map:</h3>
+        <p id="map"></p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.507257664329!2d74.87394367507339!3d31.61995894221596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39197dbf25d15bf7%3A0xc7c4ed739c79232a!2sGOLDEN%20TEMPLE%20AMRITSAR!5e0!3m2!1sen!2sin!4v1708026154836!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/punjab" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

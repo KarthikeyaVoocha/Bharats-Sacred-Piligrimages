@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Andhra Pradesh</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Tirupati</b></h1>
+                <p id="para1">Venkateswara Temple is a landmark Vaishnavite temple situated in the hill town of Tirumala at Tirupati in Chittoor district of Andhra Pradesh, India. The Temple is dedicated to Lord Sri Venkateswara, an incarnation of Vishnu, who is believed to have appeared here to save mankind from trials and troubles of Kali Yuga. Hence the place has also got the name Kaliyuga Vaikuntham and Lord here is referred to as Kaliyuga Prathyaksha Daivam. The temple is also known by other names like Tirumala Temple, Tirupati Temple, Tirupati Balaji Temple. Lord Venkateswara is known by many other names: Balaji, Govinda, and Srinivasa..</p>
+                <p>Sri Venkateswara Swami Vaari Temple houses the deity Venkateswara, an avatar of Vishnu. Devotees believe that Venkateswara appeared on earth to save humankind from the trials of Kali Yuga. Venkateswara is known by other names such as Srinivasa, Balaji and Govinda. There are several legends associated with the God appearing in Tirumala.</p>
+                <p>Tirumala hills are part of Seshachalam Hills range. The hills are 853 metres (2,799 ft) above sea level and comprise seven peaks, representing the seven heads of Adisesha. The temple lies on the seventh peak—Venkatadri, on the southern banks of Sri Swami Pushkarini, a holy water tank. Hence the temple is also referred to as "Temple of Seven Hills". Tirumala town covers an area of about 10.33 sq mi (26.75 km2).</p>
+            </div>
+            <div>
+                <img src= "{{ url_for('static',filename='tirupati.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+    </div>
+    <h3>Tirupati darshanam details:</h3>
+    <p>Tuesday, Saturday, and Sunday: Darshan begins at 7:30 AM and continues until 7 PM in the evening. It reopens from 8 PM and extends until 1 AM the following morning.
+
+        Wednesday and Friday: Darshan commences at 9 AM, concluding at 7 PM in the evening, and resumes from 8 PM to 1 AM the next morning.
+        
+        Thursday: Early darshan starts at 8 AM, concluding at 7 PM, and then reopens from 8 PM to 1 AM the next morning.</p>
+        <h3>Map:</h3>
+    <div><p id="map"><iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.580824266396!2d79.34466857455766!3d13.683233898878363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b19d3f65f0b%3A0x9ceb617526255701!2sSri%20Tirumala%20Tirupati%20Devasthanams%20(Tirupati%20Balaji%20Temple)!5e0!3m2!1sen!2sin!4v1707712680956!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Sri Kalahasti</b></h1>
+                <p id="para1">According to ancient Tamil sources Sri Kalahasti has been known as the ‘Kailas of the South’ for slightly more than two thousand years and the small river on whose banks it sits, the ‘Ganges of the South.’ Kailas is perhaps India’s most revered spiritual symbol. It is the abode of Shiva, from whose head, according to legend, the Ganges is said to flow. Shiva, ‘that which is auspicious at all places, times and in all circumstances’ is a symbol of the Self and the Ganges flowing from his head represents the spiritualized or awakened mind. A mind sourced in Spirit is a river of immeasurable power and life-giving goodness.</p>
+                <p id="para2">This holy place is situated in the Chittoor district of Andhra Pradesh. Srikalahasti is a temple, which is famous among the devotees that visit this sacred place. This temple is dedicated to Lord Shiva, who is a Hindu God with immense religious significance.
+
+                    The temple was built in the year 1516 by “Krishnadevraya,” who is the king of the Vijayanagara Empire. This temple has a great architecture that can take a breath away with its incredible design right from the beginning.
+                    
+                    The temple includes several intricate stone carvings of numerous mythological stories, which can be explored in the divine atmosphere. This holy place is mostly referred to as the Kashi and Kailasa of the south.The temple is constructed using the beautiful Dravidian style of architecture. It was built in the 5th century during the Pallava period. This incredible holy temple offers a fantastic view for the visitors, as it is located at a hill’s base. Several folks believe that it is a monolithic structure, which means the entire temple is made out of a single large stone block.</p>
+                <p>One of the key festivals celebrated at Srikalahasti Temple is “Maha Shivratri,” which comes in the Maasi month and starts from 15th Feb to 15th Mar. The festival Maha Shivratri coincides on the fifth day of the Massi month.During the festival’s celebration, a huge crowd of devotees performs a ritual for their deities with enthusiasm and excitement.</p>
+
+            </div>
+        
+            <div>
+                <img src= "{{ url_for('static',filename='srikalahasti-templeandhra-pradesh-india-2-1.webp') }}"
+                width="800px"
+                breadth="900px" >
+            </div>
+        </div>
+    </div>
+    <h3>Srikalahasti temple darshanam details:</h3>
+        <p> Morning hours are as follows: 5:30 to 6:15, 7:00 to 8:00, and 8:30 to 11:30.
+        The afternoon hours are from 1:00 pm to 5:00 pm.
+        Evening Hours are from 6:00 pm until 9:00 pm.</p>
+        <h3>Map:</h3>
+    <div><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31003.932958930534!2d79.68268512806651!3d13.7492003813341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d3e543dbbc769%3A0xc759d83ecf891652!2sSrikalahasti%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1707711043090!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<br><br><br>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/ap" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

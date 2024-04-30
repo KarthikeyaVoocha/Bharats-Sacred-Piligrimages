@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Goa</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Bascilica of Bom jesus</b></h1>
+                <p id="para1">Basilica of Bom Jesus, Roman Catholic church in the abandoned city of Old Goa, Goa state, India. Built between 1594 and 1605, it is regarded as an outstanding example of Renaissance Baroque and Portuguese colonial architecture. The basilica is also known for housing the remains of the missionary St. Francis Xavier, who was based in Goa in 1541–49.</p>
+                    <p>It is known to be the only Church in Goa which has not been plastered from Outside. Its foundation stone was laid out on by Fr. Alexia de Menezes, the Archbishop of Goa and Primate of India on 24th November in 1594. The construction was completed on 15 May 1605. It received the status of a Minor basilica in the year of 1946.</p>
+                    <p>Located at a distance of approximately 10 km from Panaji in Old Goa, the Basilica of Bom Jesus is on the banks of River Mandovi. A UNESCO World Heritage Monument, Bom Jesus Basilica has the mortal remains of St. Francis Xavier, Goa's patron saint. He died while on his voyage to China in the year of 1552. A popular sightseeing spot, this church is also visited by many tourists from around the world not just India for its religious associations.</p>
+            </div>
+            <div> 
+                <img src="{{ url_for('static',filename='bascilachurch.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Bascilica of Bom jesus Timings :</h3>
+    <p>The Basilica of Bom Jesus is open daily; from 10:30 AM to 6:30 PM on Sundays, and from 9 AM to 6:30 PM on weekdays. It is open to all and there is no entry fee.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.69501032907!2d73.9065351765454!3d15.500828916008448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbef2b99b0289%3A0x1e8056689f15a7b8!2sBasilica%20of%20Bom%20Jesus!5e0!3m2!1sen!2sin!4v1707906497377!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Shri Shantadurga Temple</b></h1>
+                <p id="para1">Shri Shantadurga Temple is situated at the foothill of Kavalem village in Ponda Taluka, Goa. A small laterite mud shrine was built and the deity was installed here. The mud-shrine was converted into a beautiful temple whose foundation stone was laid in 1730 and the temple was completed in 1738 and renovated in 1966
+
+                    The temple is dedicated to Shantadurga, the goddess who mediates between Vishnu and Shiva. The deity is also called ‘Santeri’ colloquially. Local legends tell of a battle between Shiva and Vishnu. The battle was so fierce that the god Brahma prayed to Goddess Parvati to intervene, which she did in the form of Shantadurga. Shantadurga placed Vishnu on her right hand and Shiva on her left hand and settled the fight.</p>
+                    <p>Initially based in Keloshi, Shri Shantadurga Mandir was moved to its present location in Kavlem in the 18th century. The Portuguese destroyed the original location of the temple in Keloshi or Quelossim in 1566. It was several hundred years later, in 1738, that Shri Shantadurga Temple was rebuilt under the rule of the Marathas.</p>
+                <img src= "{{ url_for('static',filename='shree-shantadurga-temple.jpg '') }}"
+                width="800px"
+                breadh="900px">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Shri Shantadurga Temple Timings:</h3>
+    <p>Also known as Shree Shantadurga Saunsthan, this Hindu temple is open on all days of the week from 6 AM to 8:30 PM. If you are not able to physically visit this religious shrine, you can also go to their official website for live ‘darshan’ (visitation). There is no fee to enter the temple.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246176.28918548775!2d73.73295249814016!3d15.403297699999529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc056dbb98bad%3A0x7062e4b8d2679e31!2sShree%20Shantadurga%20Mandir!5e0!3m2!1sen!2sin!4v1708005830829!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/goa" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

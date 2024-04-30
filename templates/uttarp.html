@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Uttar Pradesh</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Kashi Vishwanath Temple</b></h1>
+                <p id="para1">Kashi Vishwanath Temple, temple located in Varanasi, Uttar Pradesh, India. It is among the most important Hindu temples in India and is one of the 12 temples where Shiva is believed to have appeared as a column of light.
+
+                    The Kashi Vishwanath Temple stands on the west bank of the Ganges River. It is dedicated to Shiva, who has been worshipped here for hundreds of years as Vishwanatha or Vishweshwara, “Lord of the Universe.”</p>
+                    <p>Situated in the holy city of Varanasi, it stands as a testament to the rich spiritual and cultural heritage of India. With a history spanning over several millennia, this temple has witnessed the rise and fall of empires, the ebb and flow of pilgrims, and the enduring devotion of countless worshippers.The origins of the Kashi Vishwanath Temple can be traced back to ancient times, and its history is intertwined with the legendary city of Varanasi, also known as Kashi or Benares.</p>
+                    <p>The Kashi Vishwanath Temple has had a profound impact on Indian culture and spirituality. It serves as a symbol of the enduring nature of Hinduism and its ability to adapt and thrive despite challenges. The temple has also played a role in the development of Varanasi as a center of learning, culture, and spirituality.</p>
+
+            </div>
+            <div> 
+                <img src=  "{{ url_for('static',filename='Kashi-Vishwanath-Dham.png') }}"
+                width="800px"
+                breadh="900px">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Kashi Vishwanath Temple darshan details:</h3>
+    <p>Shri kashi vishwanath temple usually opens at 4:00 Am in the morning and closes ny 11:00 AM  and opens by 12:00 PM for darshan till 7:00 PM </p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28859.752419310018!2d82.97887518108607!3d25.288440369718423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2e21ee940b17%3A0x48600e4fcdfb7b13!2sShri%20Kashi%20Vishwanath%20Temple!5e0!3m2!1sen!2sin!4v1708056318388!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Murudeshwar Temple</b></h1>
+                <p id="para1">Murudeshwara is a temple town in Bhatkala Taluk, North Canara district in Coastal Karnataka. Located on the main Mangalore- Karwar Highway, And it is sandwiched between the picturesque Western Ghats and the Arabian Sea. Its main attraction is a Shiva Temple with Chalukya and Kadamba sculptures built in the Dravidian style of architecture with an awesome Shiva statue and its pristine beach. The temple is located on a hillock which offers a magnificent view of the sea. The temple complex is famous for its tall Shiva statue which is around 37 m high and is the tallest Shiva statue in India. The temple gopura at 237 ft is the 2nd tallest in India. From across the beach, one can see the mammoth statue sparkling against the backdrop of a blue sky. There is also a huge statue of the Gitopadesha depicted in the lush garden here complete with a chariot.</p>
+                <p id="para2">Murudeshwar in Karnataka attracts huge tourists due to the pious Murudeshwar temple. Located on the Kanduka Giri hills, the temple has the second tallest statue of Shiva. The ultimate Shiva temple is covered with the mighty Arabian Sea from 3 sides and is a great view for whoever visits. It is also known as Kethappa Narayan and anyone visiting Murudeshwara is highly advised to pay a visit to the temple of almighty Shiva. 
+
+                    Although the Murudeshwara Temple is hundreds of years old, you wouldn’t believe it if you were standing right in front of it. This is because the temple and the Shiva Statue have been renovated by the businessman and philanthropist R.N Shetty to make the ancient structure last for several more centuries. Apart from the inner sanctum, almost everything here has been recently renovated. Now there is a lift as well for devotees of all age groups to reach the top of the temple with ease.</p>
+
+
+                <img src=  "{{ url_for('static',filename='murudeshwar.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Murudeshwar temple darshanam details:</h3>
+        <p>The Murudeshwar Temple in Karnataka is open from 6 AM–1 PM and 3 PM–8:15 PM. Some say the best time to visit is between 3 AM–1 PM and 3 PM–8 PM, when the Gopuram lift is operational and offers a good view of the Shiva statue. </p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30957.75822202208!2d74.44665987431641!3d14.09371229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc410efb2f7e51%3A0xc0548490c3c96ee4!2sShri%20Murudeshwar%20Shivan%20Temple!5e0!3m2!1sen!2sin!4v1707897074835!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/uttarp" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Maharashtra</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Trimbakeshwar Temple</b></h1>
+                <p id="para1">Trimbakeshwar Shiva Temple is an ancient and historic Hindu temple in Trimbak village (Located in the Nasik district of Maharashtra) dedicated to Lord Trimbakeshwar (Supreme deity Lord Shiva). It is 28 Km far from the City of Nashik. Trimbakeshwar Temple is an ancient temple of Lord Shiva and identified as one of the divine 12 Jyotirlinga. The holy river Godavari originates near Trimbak. Kushavarta Kund (sacred Pond) also lies in the temple premises built by the "Shrimant Sardar Raosaheb Parnekar," known as Fadnavis of Indore State. Shri. Nanasaheb (Peshwa Balaji Baji Rao) constructed the current Trimbakeshwar Temple.</p>
+                <p>Temple is located at the foothill of the mountain "Bramhagiri," where the Holy Ganga River originates (Maharashtra's longest river). The History of the Trimbakeshwar Temple is that it was built-in 1755-1786 AD by Shri. Nanasaheb Peshwa. The word "Trimbak" indicates Trinities (trideva): Lord Brahma, Lord Vishnu, and Lord Mahesh. The Temple is made with black stone, and it is bordered with a 20 to 25ft stone wall that gives a prosperous look. In the Trimbakeshwar Shiva Temple premises, Kushavarta Tirtha (holy Pond) is 400m away located. It is 21ft deep pond that was built in the year 1750. It is believed that Kushavarta is the place where the holy Ganga River remerges after disappearing at Bramhahgiri hills and thus the superior holiness of the Kushavarta Tirtha.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='Trimbakeshwar-Shiva-Temple-Nashik.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Trimbakeshwar temple darshanam details:</h3>
+    <p>Trimbakeshwar temple opens at 5:30 AM and closes at 9:00 PM. Rudrabhishek timings are from 7:00 AM to 8:30 AM. General darshan is allowed from a distance of 5 meters.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.801254825411!2d73.52720197522723!3d19.932778281456322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb013af2e74b%3A0x716282a3a46b04cc!2sTrimbakeshwar%20Jyotirling%20Mandir!5e0!3m2!1sen!2sin!4v1708010954263!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Shirdi Saibaba Temple</b></h1>
+                <p id="para1">Abode of the revered saint -Shri Satchidanand Sadguru Sainath Maharaj, affectionately known as ‘Saibaba’, Shirdi is a popular attraction in the pilgrimage circuit tour of Maharashtra. Hardly 83 kilometers from the city of Ahmednagar, Shirdi draws people from all walks of life, who believe that their requests will be granted by the saint.</p>
+                 <p>The main attraction of Shirdi is the Sai Baba Samadhi Mandir, situated in the heart of the town of Shirdi. Sai Baba’s body has been laid to eternal rest here. Sai Baba Samadhi Mandir was built in 1917-1918 by a millionaire from Nagpur and an ardent devotee of Sai Baba, Shreemant Gopalrao Buti. It was originally constructed to place the idol of Lord Krishna but later became the place where the last remains of Sai Baba were laid. This Samadhi Mandir holds great reverence for Baba’s devotees from all over the world.</p>
+                <img src= "{{ url_for('static',filename='Shirdi-Sai-Baba-Temple-Maharashtra-1_TemplePurohit.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Shirdi Saibaba temple darshanam details:</h3>
+        <p>The timings of darshan for Shirdi Saibaba temple on the days of Monday/Tuesday/Wednesday/Friday is-8:30 AM - 12:30 PM | 4:30 PM - 8:30 PM
+            And of the days of Thursday/Saturday/Sunday is-8:30 AM - 8:30 PM </p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.730509725611!2d74.47302027468194!3d19.766601129930734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc5b95bf70c2f7%3A0x23dbc9b2db45374!2sShri%20Sai%20Baba%20Temple%20Shirdi!5e0!3m2!1sen!2sin!4v1708013955180!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/maharastra" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

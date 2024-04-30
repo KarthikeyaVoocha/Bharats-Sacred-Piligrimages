@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Delhi</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Jama Masjid</b></h1>
+                <p id="para1">Jama Masjid of Delhi, mosque in Old Delhi, India, constructed in 1650–56 by the Mughal emperor Shah Jahān, a noted patron of Islamic architecture whose most famous work is the Taj Mahal, in Agra. Jama Masjid, now the second largest mosque on the Indian subcontinent, is also an impressive example of Mughal architecture.</p>
+                <p>Jama Masjid is Delhi’s principal mosque, the place where the city’s Muslims traditionally gather for Friday communal prayer; Jama Masjid is Arabic for “Friday mosque.” The mosque is near the Red Fort, yet another of Shah Jahān’s buildings. Jama Masjid and its courtyard stand on an outcropping more than 30 steps higher than the street, giving the mosque a commanding view of the surrounding area. The longer name, Masjid-i Jahān Numā, translates to “world-reflecting mosque” or “world-displaying mosque.” The mosque was built by a crew of some 5,000 workers. The principal construction material was red sandstone, but some white marble was also used.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='Jama_Masjid_-.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;">Jama Masjid timings:</h3>
+    <p>Jama Masjid in Delhi opens from 7 AM to 12 PM and then again at 1.30 PM and closes at 6.30 PM. It is open on all days of the week.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3018532661677!2d77.22867849678956!3d28.650679200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd18df89b215%3A0xdd57369e29bf9d96!2sJama%20Masjid!5e0!3m2!1sen!2sin!4v1708070701581!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Akshardham Mandir</b></h1>
+                <p id="para1">Akshardham' means the divine abode of God. It is hailed as an eternal place of devotion, purity and peace. Swaminarayan Akshardham at New Delhi is a Mandir – an abode of God, a Hindu house of worship, and a spiritual and cultural campus dedicated to devotion, learning and harmony. Timeless Hindu spiritual messages, vibrant devotional traditions and ancient architecture all are echoed in its art and architecture.The mandir is a humble tribute to Bhagwan Swaminarayan (1781- 1830), the avatars, devas and great sages of Hinduism. The traditionally-styled complex was inaugurated on 6 November 2005 with the blessings of HH Pramukh Swami Maharaj and through the devoted efforts of skilled artisans and volunteers.</p>
+                <p id="para1">Each element of Akshardham echoes with spirituality – the Mandir, the Exhibitions and even the Gardens.
+                    The Akshardham mandir has over two hundred murtis, representing many of the spiritual stalwarts over many millennia. The spiritual premise of Akshardham is that each soul is potentially divine. Whether we are serving the family, the country our neighbors or all living beings the world over , each service can help one move towards divinity. Each prayer is a call towards improving oneself and moving closer to God.
+                    A visit to Akshardham is a spiritually enriching experience. Whether it is in realising the power of prayer, in feeling the strength of non-violence, in being aware of the universal nature of Hinduism’s ancient principles, or just in admiring the beauty of God’s abode on Earth –- each element has a spiritual significance.</p>
+                <img src="{{ url_for('static',filename='akshardham-temple.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;">Akshardham Mandir darshan details:</h3>
+        <p>The temple opens from 9:30 a.m. to 6:30 p.m. on all days except Monday.On mondey the temple is closed.</p>
+        <h3>Map:</h3>
+        <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.534480231971!2d77.27393337495607!3d28.613739134934754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce35b9975b1fb%3A0x69a09f265ef3b22a!2sAkshardham!5e0!3m2!1sen!2sin!4v1708092622043!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/Delhi" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+

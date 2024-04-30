@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title color: silver>Ancient Pilgrimage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: linear-gradient(to right,maroon,rgb(223, 193, 20));
+            color: #ffffff;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        .display-4{
+           font-family: garamond;
+           font-size: 100px;
+        }
+        #heading{
+            font-family: garamond;
+            font-size: 75px;
+        }
+        #para1{
+            font: size 45px ;
+        }
+
+        #map{
+            margin-top: 30px;
+            left: 300px;
+        }
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            dispaly:block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+
+        li a:hover{
+            background-color:#111;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+      <li>  <a class="navbar-brand" href="/">Ancient Pilgrimage</a></li>
+    <li>  <a class="navbar-brand" href="/map" >Map</a></li>
+    <li >  <a class="navbar-brand" href="/contactus" >Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron/Header -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4"><b>Himachal Pradesh</b> </h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Bajreshwari Devi Temple</b></h1>
+                <p id="para1">The Mata Bajreshwari Devi Temple is one of the fifty-one Shakti Peethas located in different parts of India. It is said that Sati, the Divine Consort of Lord Shiva, gave up her body as she could not tolerate her husband being insulted by her own father, Daksha. When Shiva came to know of this, He picked up Sati’s body and began his Tandava dances. It was such a terrible dance that the gods and wrishis feared that the creation would soon be destroyed. To stop the Tandava, Vishnu cut up Sati’s body into fifty one pieces, each of which fell in different places. As Sati was the embodiment of Shakti or power, these fifty-one places began to be known as Shakti Peetha. Kangra is one such place.</p>
+                <p>Bajreswahari Devi Temple is located in New Kangra. The temple as we see today was built in 1920. Constructed in Shikhara Style of architecture, it offers a magnificent example of stone carving.  At the doorway, one is greeted by two beautiful statues. The exteriors of the temple have idols of Durga (four-armed) seated on a lion. There are also idols of Vishnu in Vaikuntha form. The pillars, which too are marvelously carved, depict images of different Hindi Gods and Goddesses. Apart from the main temple housing Mata Bajreshwari Devi, the complex also has two smaller temples. One of them is dedicated to the Lord Bhairava and other to the Dhyanu Bhagat, a devotee of the Devi.</p>
+            </div>
+            <div> 
+                <img src= "{{ url_for('static',filename='bajreshwaritemp.jpg') }}"
+                width="800"
+                breadh="900">
+            </div>
+        </div>
+    
+            <br>
+    <h3 style=" margin-top: 30px;"> Bajreshwari temple darshan details:</h3>
+    <p>Bajreshwari Devi Temple timings In summer are 5:00 AM – 9:00 PM & Winter timings are 7:00 AM – 7:00 PM.  </p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.7571738287015!2d76.26666613382022!3d32.10199675305066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b457fed85cf17%3A0xb7eeb9f8c52f9e16!2sShaktipeeth%20Shri%20Bajreshwari%20Devi%20Temple%2C%20Kangra!5e0!3m2!1sen!2sin!4v1708027484396!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="heading"><b>Baijnath Temple</b></h1>
+                <p id="para1">Baijnath Temple is one of the most popular temples in Himachal Pradesh, and here, Lord Shiva is worshipped as the 'God of Healing'. Baijnath or Vaidyanath is an avatar of the great Lord Shiva, and in this avatar, the great lord rids his devotees of all miseries and pain. As a result, this temple holds ultimate significance to all Lord Shiva devotees and is considered to be extremely sacred.</p>
+                <p>Baijnath temple was built in 1204 A.D by two native merchants, Ahuka and Manyuka, who were doting devotees of Lord Shiva. Situated at a distance of only 16 kms from Palampur, this time-honoured temple is a place where one can attain sterling peace and untainted tranquillity in the gentle caress of god. It is one of the very few temples in India where both, Lord Shiva and Demon King Ravan are worshipped.The history of the Baijnath Temple is inscribed in the stone walls of the complex. Inscriptions on the walls of the temple indicate that before the present temple, a shrine of Lord Shiva rested on the same spot. Lush green gardens and manicured lawns make a perfect foreground for this unique and ancient structure.</p>
+                <img src= "{{ url_for('static',filename='Shiva_temple_baijnath_.jpg') }}"
+                width="800px"
+                breadth="900px">
+            </div>
+        </div>
+
+        <br>
+    <h3 style=" margin-top: 30px;"> Baijnath temple darshan details:</h3>
+    <p>Baijnath Temple opens at 6:00 AM in the morning and close at 9:00 PM in the evening. You can explore the entire temple in 1-2 hours, and there is no entry fee to visit the temple.</p>
+        <h3>Map:</h3>
+    <p id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.6831140415125!2d76.6432788750912!3d32.05076772074697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390492fe4d690f5d%3A0x6a9b130a4818b1cc!2sShri%20Shiv%20Temple%20Baijnath!5e0!3m2!1sen!2sin!4v1708028161233!5m2!1sen!2sin" width="780" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+<hr>
+    <div>
+        <h2>Comments</h2><br><br>
+        <form action="/himachal" method="post">
+            <label for="name"> Name</label>
+            <input type="text" name="name"><br><br>
+            <label for="comments">Comment</label>
+            <input type="text" name="comment"><br><br>
+            <input type="submit"><br><br>
+
+        </form>
+    </div>
+    {% for comment in comments%}
+
+    <div>
+    <hr>
+        <h6>{{comment.Name}}</h6>
+        <p> {{comment.comment}}</p>
+    
+    </div>
+    {% endfor %}
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>&copy; 2024 Ancient Pilgrimage</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
